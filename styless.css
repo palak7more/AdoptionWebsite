@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffaf8;
+  color: #333;
+}
+
+header {
+  background-color: #f9c5d1;
+  padding: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #5c3d2e;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #ffe5ec;
+  padding: 0.5rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #5c3d2e;
+  font-weight: 600;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #d6336c;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #5c3d2e;
+}
+
+.hero-img {
+  margin-top: 1rem;
+  width: 60%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+footer {
+  background-color: #f9c5d1;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+.quiz {
+  margin-top: 2rem;
+}
+
+.quiz h2 {
+  color: #a82c53;
+}
+
+.question {
+  margin: 1rem 0;
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.result {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #155724;
+  font-weight: bold;
+}
+
+.filters {
+  margin-bottom: 1.5rem;
+}
+
+.filters button {
+  margin: 0.2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffccd5;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.dog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.dog-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.dog-card img {
+  width: 100%;
+  border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+}

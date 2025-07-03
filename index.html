@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pawfect Pals - Home</title>
+  <link rel="stylesheet" href="styless.css">
+  <script defer src="quiz.js"></script>
+</head>
+<body>
+  <header>Pawfect Pals 🐶</header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="adopt.html">Adopt</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="hero">
+    <h1>Welcome to Pawfect Pals!</h1>
+    <p>Your journey to finding a loyal friend begins here. 🐾</p>
+    <img src="images/banner.png" alt="Happy dog" class="hero-img">
+
+    <section class="quiz">
+      <h2>Find Your Pawfect Match 🐕💘</h2>
+      <form id="dog-quiz">
+        <div class="question">
+          <p>1. What kind of energy do you prefer in a dog?</p>
+          <label><input type="radio" name="q1" value="A"> High energy, playful</label><br>
+          <label><input type="radio" name="q1" value="B"> Calm and chill</label><br>
+          <label><input type="radio" name="q1" value="C"> Loyal and protective</label>
+        </div>
+
+        <div class="question">
+          <p>2. How much space do you have?</p>
+          <label><input type="radio" name="q2" value="A"> Small apartment</label><br>
+          <label><input type="radio" name="q2" value="B"> Medium house</label><br>
+          <label><input type="radio" name="q2" value="C"> Large home with yard</label>
+        </div>
+
+        <div class="question">
+          <p>3. How much time can you spend with your dog daily?</p>
+          <label><input type="radio" name="q3" value="A"> A lot! I want a companion</label><br>
+          <label><input type="radio" name="q3" value="B"> Moderate time</label><br>
+          <label><input type="radio" name="q3" value="C"> Busy schedule</label>
+        </div>
+
+        <button type="button" onclick="getMatch()">Get My Match!</button>
+      </form>
+
+      <div id="match-result" class="result"></div>
+    </section>
+  </main>
+
+  <footer>© 2025 Pawfect Pals | Woofs & Wags 🐾</footer>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adopt a Dog - Pawfect Pals</title>
+  <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+  <header>Pawfect Pals 🐶</header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="adopt.html">Adopt</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="hero">
+    <h1>Meet Our Adorable Dogs 🐕</h1>
+
+    <div class="filters">
+      <button onclick="filterDogs('all')">All</button>
+      <button onclick="filterDogs('playful')">Playful</button>
+      <button onclick="filterDogs('calm')">Calm</button>
+      <button onclick="filterDogs('small')">Small</button>
+      <button onclick="filterDogs('big')">Big</button>
+    </div>
+
+    <div class="dog-grid" id="dog-list">
+      <div class="dog-card playful small">
+        <img src="images/image1.png" alt="Max">
+        <h3>Max</h3>
+        <p>Playful Beagle, 2 years</p>
+      </div>
+
+      <div class="dog-card calm big">
+        <img src="images/image2.png" alt="Bella">
+        <h3>Bella</h3>
+        <p>Calm Golden Retriever, 3 years</p>
+      </div>
+
+      <div class="dog-card loyal big">
+        <img src="images/image3.png" alt="Rocky">
+        <h3>Rocky</h3>
+        <p>Loyal German Shepherd, 4 years</p>
+      </div>
+
+      <div class="dog-card playful small">
+        <img src="images/image4.png" alt="Luna">
+        <h3>Luna</h3>
+        <p>Playful Pomeranian, 1 year</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>© 2025 Pawfect Pals | Woofs & Wags 🐾</footer>
+
+  <script>
+    function filterDogs(category) {
+      const dogs = document.querySelectorAll('.dog-card');
+      dogs.forEach(dog => {
+        if (category === 'all' || dog.classList.contains(category)) {
+          dog.style.display = 'block';
+        } else {
+          dog.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
